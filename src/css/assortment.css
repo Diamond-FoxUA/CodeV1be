@@ -20,12 +20,15 @@
     gap: 16px;
 }
 
+.product-item-content {
+    margin-bottom: auto;
+}
+
 .product-item-content{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 91px;
 }
 
 .product-item-img {
@@ -56,13 +59,18 @@
     max-width: 288px;
 }
 
+.product-item-text-box {
+    margin-bottom: 8px;
+}
+
+
 .product-item-price {
     font-weight: 600;
     font-size: 20px;
     line-height: 1.6;
     text-align: center;
     color: var(--color-neutral-darkest);
-    margin-top: 8px;
+    margin-top: auto;
 }
 
 .product-item-btn {
@@ -156,5 +164,10 @@
 
     .product-item-text{
         max-width: 310px;
+    }
+
+    .product-item:nth-child(2) .product-item-text {
+        max-width: 170px;
+        margin: 0 auto 8px auto;
     }
 }
