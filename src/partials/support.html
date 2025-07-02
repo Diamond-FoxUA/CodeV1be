@@ -16,7 +16,7 @@
           minlength="5"
           required
           />
-          <p class="text-invalid-name">Недостатньо символів</p>
+          <span class="text-invalid">Недостатньо символів</span>
 
         <label for="user-email">Електронна пошта</label>
         <input
@@ -27,15 +27,18 @@
           pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
           required
         />
-        <p class="text-invalid-email">Неправильний формат</p>
+        <span class="text-invalid">Неправильний формат</span>
 
-        <label for="message">Повідомлення</label>
+        <label for="message">Повідомлення
         <textarea
           name="message"
           id="message"
           placeholder="Введіть своє повідомлення..."
           maxlength="500"
         ></textarea>
+        <span class="text-invalid">Неправильний формат</span>
+        </label>
+
         <button type="submit" class="support-btn">Надіслати</button>
       </form>
     </div>

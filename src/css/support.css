@@ -1,5 +1,5 @@
 .support {
-    background-color: #ebf8ed;
+    background-color: #EBF8ED;
     padding: 32px 0;
 }
 
@@ -19,21 +19,21 @@
 }
 
 .support-title {
-    font-family: "Comfortaa", sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.01em;
-    color: #030a06;
+    color: #030A06;
     margin: 0;
 }
 
 .support-subtitle {
-    font-family: "Fira Sans", sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.6;
-    color: #030a06;
+    color: #030A06;
     margin: 0;
 }
 
@@ -43,11 +43,11 @@
 }
 
 .support-form label {
-    font-family: "Fira Sans", sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    color: #030a06;
+    color: #030A06;
     margin-top: 24px;
 }
 
@@ -69,115 +69,94 @@
     outline: none;
 }
 
-/* .user-name:not(:placeholder-shown):invalid {
-    border-color: #d64040;
-} */
-
-input:not(:placeholder-shown):invalid,
-.support-form textarea:not(:placeholder-shown):invalid {
+.support-form input:not(:placeholder-shown):invalid,
+.support-form textarea:not(:placeholder-shown):invalid,
+textarea.textarea-limit {
     border-color: #D64040;
     display: block;
 }
 
-
-.text-invalid-name {
-    font-family: "Fira Sans", sans-serif;
+.text-invalid {
+    font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.6;
-    color: #d64040;
+    color: #D64040;
     margin: 0;
     display: none;
 }
 
-/* .user-name:not(:placeholder-shown):invalid~.text-invalid-name {
+.user-name:not(:placeholder-shown):invalid~.text-invalid,
+.user-email:not(:placeholder-shown):invalid~.text-invalid,
+textarea.textarea-limit~.text-invalid {
     display: block;
-    }
-    
-    .user-email:not(:placeholder-shown):invalid,
-    textarea.textarea-limit {
-        border-color: #d64040;
-        } */
-        
-        .text-invalid-email {
-            font-family: "Fira Sans", sans-serif;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 1.6;
-            color: #d64040;
-            margin: 0;
-            display: none;
-        }
-        
-        /* .user-email:not(:placeholder-shown):invalid~.text-invalid-email {
-            display: block;
-            } */
-            
-            .support-form input.user-name:valid,
-            .support-form input.user-email:valid {
-                background: rgba(3, 10, 6, 0.05);
-                border: 1px solid rgba(3, 10, 6, 0.15);
-            }
-            
-            .support-form input::placeholder {
-                font-family: "Fira Sans", sans-serif;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 1.6;
-                color: rgba(3, 10, 6, 0.6);
-            }
-            
-            .support-form textarea {
-                border: 1px solid rgba(3, 10, 6, 0.15);
-                border-radius: 6px;
-                padding: 12px;
-                width: 288px;
-                height: 180px;
-                background: rgba(3, 10, 6, 0.05);
-                resize: none;
-                margin-top: 8px;
-                outline: none;
-            }
-            
-            textarea.textarea-limit {
-                border-color: #D64040;
-            }
+}
 
-            .support-btn {
-                border: 1px solid #030a06;
-                border-radius: 6px;
-                padding: 12px 24px;
-                width: 288px;
-                height: 50px;
-                background: #030a06;
-                color: #fff;
-                outline: none;
-                margin-top: 24px;
-                transition: background-color 300ms ease-in-out, border-color 300ms ease-in-out;
-            }
-            
-            .support-btn:hover,
-            .support-btn:focus {
-                background-color: rgba(4, 12, 7, 0.5);
-                border-color: rgba(4, 12, 7, 0.025);
-            }
-            
-            .support-img {
-                background-image: url(/images/support/studio-mobile-min.jpg);
-                border-radius: 40px;
-                width: 288px;
-                height: 428px;
-                overflow: hidden;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-            }
-            
-            @media screen and (min-resolution: 2x) {
-                .support-img {
-                    background-image: url(/images/support/studio-mobile-2x-min.jpg);
-                }
-            }
+.support-form input.user-name:valid,
+.support-form input.user-email:valid {
+    background: rgba(3, 10, 6, 0.05);
+    border: 1px solid rgba(3, 10, 6, 0.15);
+}
+
+.support-form input::placeholder {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(3, 10, 6, 0.6);
+}
+
+.support-form textarea {
+    border: 1px solid rgba(3, 10, 6, 0.15);
+    border-radius: 6px;
+    padding: 12px;
+    width: 288px;
+    height: 180px;
+    background: rgba(3, 10, 6, 0.05);
+    resize: none;
+    margin-top: 8px;
+    outline: none;
+}
+
+textarea.textarea-limit {
+    border-color: #D64040;
+}
+
+.support-btn {
+    border: 1px solid #030A06;
+    border-radius: 6px;
+    padding: 12px 24px;
+    width: 288px;
+    height: 50px;
+    background: #030A06;
+    color: #fff;
+    outline: none;
+    margin-top: 24px;
+    transition: background-color 300ms ease-in-out, border-color 300ms ease-in-out;
+}
+
+.support-btn:hover,
+.support-btn:focus {
+    background-color: rgba(4, 12, 7, 0.5);
+    border-color: rgba(4, 12, 7, 0.025);
+}
+
+.support-img {
+    background-image: url(/images/support/studio-mobile-min.jpg);
+    border-radius: 40px;
+    width: 288px;
+    height: 428px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (min-resolution: 2x) {
+    .support-img {
+        background-image: url(/images/support/studio-mobile-2x-min.jpg);
+    }
+}
 
 @media screen and (min-resolution: 3x) {
     .support-img {
@@ -200,11 +179,11 @@ input:not(:placeholder-shown):invalid,
     }
 
     .support-form input {
-        width: 704px
+        width: 704px;
     }
 
     .support-form textarea {
-        width: 704px
+        width: 704px;
     }
 
     .support-img {
@@ -264,5 +243,4 @@ input:not(:placeholder-shown):invalid,
         .support-img {
             background-image: url(/images/support/studio-desktop-3x-min.jpg);
         }
-    }
-}
+    } }
